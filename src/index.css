@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-gray-900;
+    background: linear-gradient(180deg, rgba(219, 234, 254, 0.3) 0%, rgba(219, 234, 254, 0) 100%);
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .bg-gradient-blue {
+    background: linear-gradient(180deg, rgba(219, 234, 254, 0.3) 0%, rgba(219, 234, 254, 0) 100%);
+  }
+}
