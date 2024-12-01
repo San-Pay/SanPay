@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start":"vite",
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -18,6 +18,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.32",
     "@solana/web3.js": "^1.95.3",
     "bootstrap": "^5.3.3",
+    "buffer": "^6.0.3",
     "framer-motion": "^11.11.17",
     "ionicons": "^7.4.0",
     "lucide-react": "^0.460.0",
@@ -35,6 +36,7 @@
     "web-vitals": "^4.2.3"
   },
   "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@eslint/js": "^9.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
