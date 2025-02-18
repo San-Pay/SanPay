@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import ToolTip from "./ToolTip";
 
 function Hero() {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -42,15 +43,16 @@ function Hero() {
 
                 {/* Tooltip with Animated Arrow */}
           {showTooltip && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              // className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg shadow-md flex items-center gap-2"
-              className="absolute -top-14 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-sm px-4 py-2 rounded-2xl shadow-lg  before:content-[''] before:absolute before:top-full before:left-1/3 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-black">
-              <span>Click to Try Testnet!</span>
-              </motion.div>
+            // <motion.div
+            //   initial={{ opacity: 0, y: -10 }}
+            //   animate={{ opacity: 1, y: 0 }}
+            //   exit={{ opacity: 0, y: -10 }}
+            //   transition={{ duration: 0.4, ease: "easeOut" }}
+            //   // className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg shadow-md flex items-center gap-2"
+            //   className="absolute -top-14 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-sm px-4 py-2 rounded-2xl shadow-lg  before:content-[''] before:absolute before:top-full before:left-1/3 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-t-black">
+            //   <span>Click to Try Testnet!</span>
+            //   </motion.div>
+            <ToolTip label={"Click to Try Testnet!"} showTooltip={showTooltip} setShowTooltip={setShowTooltip}></ToolTip>
           )}
 
           {/* Testnet Button */}
