@@ -18,7 +18,7 @@ function AboutUs() {
             >
               <h1 className="text-5xl font-bold mb-6">About Us</h1>
               <p className="text-gray-600 max-w-2xl mx-auto text-justify">
-              Sandeep Kumar Mahto, Shashank Yadav, Suchith B S and   Yashwanth M are final-year computer science students from Bengaluru, India. Passionate about technology and innovation, they are focused on building solutions that bridge the gap between cryptocurrency and traditional finance. With expertise in blockchain development, decentralized finance, and full-stack development, they aim to revolutionize digital payments with seamless, real-time crypto to-fiat conversion systems
+              Sherwin Vishesh, Shashank Yadav, Suchith B S and   Yashwanth M are final-year computer science students from Bengaluru, India. Passionate about technology and innovation, they are focused on building solutions that bridge the gap between cryptocurrency and traditional finance. With expertise in blockchain development, decentralized finance, and full-stack development, they aim to revolutionize digital payments with seamless, real-time crypto to-fiat conversion systems
               </p>
             </motion.div>
           </div>
